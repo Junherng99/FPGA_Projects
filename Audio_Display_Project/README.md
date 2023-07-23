@@ -12,7 +12,7 @@
   4) Volume Waveform Plotter. Volume detected is also visualised as a waveform on the OLED screen. Amplitude vs time waveform can be displayed. <br>
   5) Faster sampling mode. This mode can be activated using morse code to evaluate audio signals at a faster interval. <br>
   6) Lock/Reset mechanism. By triggering a switch, a static pattern will lock all functions of the board. Turning the switch off will then display a static screen signifying a reset to 'locked' state. <br>
-  
+
   ## Compulsory tasks (OLED Tasks A and B and AVI Task)
   For these 2 tasks, the pushbutton on the basys3 board is used to control the display on the OLED screen. Pushing a specific button will cause a square or a new border
   to appear on the OLED screen. Pushbutton must be properly debounced. 
