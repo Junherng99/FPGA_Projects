@@ -1,0 +1,7 @@
+Running: xsim.dir/sim20kHz_behav/xsimk.exe -simmode gui -wdb sim20kHz_behav.wdb -simrunnum 0 -socket 55820
+Design successfully loaded
+Design Loading Memory Usage: 5828 KB (Peak: 5828 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 14388 KB (Peak: 14388 KB)
+Simulation CPU Usage: 4343 ms
