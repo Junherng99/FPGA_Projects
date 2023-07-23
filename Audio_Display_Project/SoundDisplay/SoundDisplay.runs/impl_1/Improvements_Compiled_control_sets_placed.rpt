@@ -1,0 +1,207 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Oct 31 22:42:37 2022
+| Host         : LAPTOP-THP0N2ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Improvements_Compiled_control_sets_placed.rpt
+| Design       : Improvements_Compiled
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   137 |
+| Unused register locations in slices containing registers |   278 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            3 |
+|      6 |            1 |
+|      8 |            2 |
+|     10 |            1 |
+|     14 |           98 |
+|    16+ |           27 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             142 |           39 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             530 |           74 |
+| Yes          | No                    | No                     |            1562 |          273 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             504 |           74 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+|           Clock Signal           |         Enable Signal         |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+|  My_Clock6p25mHz_BUFG            | led[14]_i_1_n_0               |                                          |                1 |              2 |
+|  My_Clock6p25mHz_BUFG            | led[7]_i_1_n_0                |                                          |                1 |              2 |
+| ~My_Clock6p25mHz_BUFG            |                               |                                          |                1 |              2 |
+|  My_Clock6p25mHz_BUFG            | led[9]_i_1_n_0                |                                          |                1 |              2 |
+|  My_Clock6p25mHz_BUFG            | led[12]_i_1_n_0               |                                          |                1 |              2 |
+|  trigger_BUFG                    |                               |                                          |                1 |              4 |
+|  MyClock4/My_Clock100Hz          |                               |                                          |                1 |              4 |
+|  seven_disp/Clock25k/My_Clock25k |                               |                                          |                1 |              4 |
+|  pb_pressed_BUFG                 |                               |                                          |                1 |              6 |
+|  My_Clock12p5mHz_BUFG            |                               |                                          |                2 |              8 |
+|  My_Clock6p25mHz_BUFG            | led[4]_i_1_n_0                |                                          |                4 |              8 |
+|  My_Clock                        |                               |                                          |                1 |             10 |
+|  My_Clock6p25mHz_BUFG            | y15[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y81[6]_i_1_n_0                |                                          |                2 |             14 |
+|  seven_disp/seg_reg[6]_i_2_n_0   |                               |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y79[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y87[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y89[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y84[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y88[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y86[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y85[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y95[6]_i_1_n_0                |                                          |                1 |             14 |
+|  My_Clock6p25mHz_BUFG            | y90[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y92[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y43[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y94[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y93[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y91[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y96[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y_coord                       |                                          |                4 |             14 |
+|  My_Clock6p25mHz_BUFG            | y9[6]_i_1_n_0                 |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | sw_IBUF[14]                   |                                          |                4 |             14 |
+|  My_Clock6p25mHz_BUFG            | y8[6]_i_1_n_0                 |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y11[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y12[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y14[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y16[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y10[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y13[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y20[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y21[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y18[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y22[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y19[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y17[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y28[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y29[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y27[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y23[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y24[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y25[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y26[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y31[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y30[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y2[6]_i_1_n_0                 |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y35[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y32[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y33[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y34[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y38[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y39[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y3[6]_i_1_n_0                 |                                          |                4 |             14 |
+|  My_Clock6p25mHz_BUFG            | y37[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y36[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y41[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y40[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y42[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y73[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y46[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y44[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y47[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y45[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y49[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y51[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y53[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y48[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y50[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y4[6]_i_1_n_0                 |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y52[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y58[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y55[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y54[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y56[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y59[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y5[6]_i_1_n_0                 |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y57[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y60[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y64[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y62[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y61[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y63[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y65[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y71[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y69[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y67[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y70[6]_i_1_n_0                |                                          |                1 |             14 |
+|  My_Clock6p25mHz_BUFG            | y68[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y66[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y6[6]_i_1_n_0                 |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y77[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y72[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y76[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y74[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y78[6]_i_1_n_0                |                                          |                3 |             14 |
+|  My_Clock6p25mHz_BUFG            | y75[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y7[6]_i_1_n_0                 |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y80[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y82[6]_i_1_n_0                |                                          |                2 |             14 |
+|  My_Clock6p25mHz_BUFG            | y83[6]_i_1_n_0                |                                          |                2 |             14 |
+|  Main_Clock_IBUF_BUFG            |                               |                                          |                8 |             16 |
+|  My_Clock6p25mHz_BUFG            | xcount[0]_i_2_n_0             | xcount[0]_i_1_n_0                        |                2 |             16 |
+|  My_Clock6p25mHz_BUFG            | morsecode[13]_i_1_n_0         | sw_IBUF[14]                              |                3 |             20 |
+|  MyClock1/CLK                    |                               |                                          |                4 |             24 |
+|  Main_Clock_IBUF_BUFG            |                               | MyClock1/CLK                             |                3 |             24 |
+|  My_Clock6p25mHz_BUFG            | current_peak[11]_i_1_n_0      | peak_value[11]_i_1_n_0                   |                2 |             24 |
+| ~AC/J_MIC3_Pin4_OBUF             |                               |                                          |                4 |             24 |
+|  My_Clock6p25mHz_BUFG            | peak_value[11]_i_1_n_0        |                                          |                4 |             24 |
+|  My_Clock6p25mHz_BUFG            |                               |                                          |               12 |             26 |
+|  My_Clock6p25mHz_BUFG            | led[11]_i_1_n_0               |                                          |                6 |             28 |
+|  My_Clock6p25mHz_BUFG            | oled_data[15]_i_1_n_0         |                                          |               11 |             32 |
+| ~My_Clock6p25mHz_BUFG            |                               | my_oled_unit/frame_counter[16]_i_1_n_0   |                5 |             34 |
+| ~My_Clock6p25mHz_BUFG            | my_oled_unit/delay[0]_i_1_n_0 |                                          |                5 |             40 |
+|  My_Clock12p5mHz_BUFG            | pb_pressed_BUFG               | counterthree[31]_i_1_n_0                 |                8 |             62 |
+|  Main_Clock_IBUF_BUFG            |                               | seven_disp/Clock25k/COUNT25k[31]_i_1_n_0 |                8 |             62 |
+|  My_Clock                        | trigger_BUFG                  | My_Counter1/FiveCounter[31]_i_1_n_0      |                8 |             62 |
+|  Main_Clock_IBUF_BUFG            |                               | MyClock1/clear                           |                8 |             64 |
+|  Main_Clock_IBUF_BUFG            |                               | MyClock2/clear                           |                8 |             64 |
+|  Main_Clock_IBUF_BUFG            |                               | MyClock3/clear                           |                8 |             64 |
+|  Main_Clock_IBUF_BUFG            |                               | MyClock4/clear                           |                8 |             64 |
+|  Main_Clock_IBUF_BUFG            |                               | My_Counter1/MyClock1/clear               |                8 |             64 |
+|  My_Clock6p25mHz_BUFG            | led[11]_i_1_n_0               | Lcount[31]_i_1_n_0                       |                9 |             64 |
+|  My_Clock6p25mHz_BUFG            | LEDcounter1s                  | LEDcounter1s[31]_i_1_n_0                 |                9 |             64 |
+|  My_Clock6p25mHz_BUFG            | LEDcounter3s                  | LEDcounter3s[31]_i_1_n_0                 |                9 |             64 |
+| ~My_Clock6p25mHz_BUFG            | my_oled_unit/state            |                                          |                9 |             64 |
+| ~My_Clock6p25mHz_BUFG            |                               | my_oled_unit/spi_word[39]_i_1_n_0        |               18 |             90 |
+|  My_Clock6p25mHz_BUFG            | count3s                       | count3s[31]_i_1_n_0                      |               24 |            128 |
++----------------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+
+
