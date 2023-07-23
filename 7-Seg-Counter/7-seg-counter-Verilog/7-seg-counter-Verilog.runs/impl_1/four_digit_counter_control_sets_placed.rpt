@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jul 23 19:34:03 2023
+| Host         : LAPTOP-THP0N2ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file four_digit_counter_control_sets_placed.rpt
+| Design       : four_digit_counter
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            2 |
+|     10 |            4 |
+|     14 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             128 |           16 |
+| Yes          | No                    | No                     |              14 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              30 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+---------------------+-------------------------------+------------------+----------------+
+|        Clock Signal       |    Enable Signal    |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------------+---------------------+-------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG            |                     |                               |                2 |              4 |
+|  MyClock1/selector_reg[3] |                     |                               |                2 |              8 |
+|  an_reg[3]_i_2_n_0        |                     |                               |                2 |              8 |
+|  Count_Spd/ones_reg[4]    |                     |                               |                3 |             10 |
+|  Count_Spd/ones_reg[4]    | hundreds[4]_i_1_n_0 | thousands[4]_i_1_n_0          |                1 |             10 |
+|  Count_Spd/ones_reg[4]    | tens[4]_i_1_n_0     | hundreds[4]_i_1_n_0           |                2 |             10 |
+|  Count_Spd/ones_reg[4]    | tens[4]_i_2_n_0     | tens[4]_i_1_n_0               |                2 |             10 |
+|  clk_IBUF_BUFG            | seg[6]_i_1_n_0      |                               |                4 |             14 |
+|  clk_IBUF_BUFG            |                     | Count_Spd/COUNT[0]_i_1__0_n_0 |                8 |             64 |
+|  clk_IBUF_BUFG            |                     | MyClock1/clear                |                8 |             64 |
++---------------------------+---------------------+-------------------------------+------------------+----------------+
+
+
